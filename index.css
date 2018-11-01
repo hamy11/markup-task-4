@@ -68,7 +68,7 @@ a
     margin-bottom: 1em;
 }
 
-.view-changer:not(:checked) ~.cat-cell .cat-preview img
+.view-changer:not(:checked) ~ .cat-cell .cat-preview img
 {
     height: 250px;
 }
