@@ -35,7 +35,7 @@ a
 }
 
 .cat-cell
-{    
+{
     display: inline-block;
     width: 290px;
     vertical-align: top;
@@ -61,26 +61,26 @@ a
     width: 30%;
 }
 
-#toListView:checked ~ .cat-cell
+.view-changer:checked ~ .cat-cell
 {
     display: block;
     width: 400px;
     margin-bottom: 1em;
 }
 
-#toListView:not(:checked) ~.cat-cell .cat-preview img
+.view-changer:not(:checked) ~.cat-cell .cat-preview img
 {
     height: 250px;
 }
 
-#toListView:not(:checked) ~ article .cat-description .simple-description,
-#toListView:checked ~ article .cat-description .full-description
+.view-changer:not(:checked) ~ article .cat-description .simple-description,
+.view-changer:checked ~ article .cat-description .full-description
 {
     display: block;
 }
 
-#toListView:not(:checked) ~ article .cat-description .full-description,
-#toListView:checked ~ article .cat-description .simple-description
+.view-changer:not(:checked) ~ article .cat-description .full-description,
+.view-changer:checked ~ article .cat-description .simple-description
 {
     display: none;
 }
