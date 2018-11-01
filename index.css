@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+
+body
+{
+    background-color: #ddd;
+    font-family: 'Mali', cursive;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper
+{
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    display: block;
+}
+
+.cat-preview
+{
+    width: 100%;
+}
+
+.cat-preview img
+{
+    width: 100%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.cat-cell
+{    
+    display: inline-block;
+    width: 290px;
+    vertical-align: top;
+    background-color: white;
+    text-align: left;
+    margin: 5px auto;
+}
+
+.cat-description
+{
+    padding: 10px;
+    color: gray;
+}
+
+.cat-name
+{
+    margin: 0;
+    padding: 10px;  
+}
+
+.description-field
+{
+    width: 30%;
+}
+
+#toListView:checked ~ .cat-cell
+{
+    display: block;
+    width: 400px;
+    margin-bottom: 1em;
+}
+
+#toListView:not(:checked) ~.cat-cell .cat-preview img
+{
+    height: 250px;
+}
+
+#toListView:not(:checked) ~ article .cat-description .simple-description,
+#toListView:checked ~ article .cat-description .full-description
+{
+    display: block;
+}
+
+#toListView:not(:checked) ~ article .cat-description .full-description,
+#toListView:checked ~ article .cat-description .simple-description
+{
+    display: none;
+}

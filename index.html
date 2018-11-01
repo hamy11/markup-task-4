@@ -1,9 +1,266 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Про котиков»</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
+    <header class="wrapper">
+        <a href="#">
+            <label class="view-changer" for="toListView">change view</label>
+        </a>
+    </header>
+    <main class="wrapper">
+        <input type="checkbox" id="toListView" hidden>
+        <article class="cat-cell">
+            <div class="cat-preview">
+                <img src="./cats/cat-1.png" alt="Cat image">
+            </div>
+            <h4 class="cat-name">
+                <a href="#">Хитрец</a>
+            </h4>
+            <div class="cat-description">
+                <section class="simple-description">
+                    <small>
+                        <span class="description-field">Порода:</span> дворовая<br>
+                        <span class="description-field">Возраст:</span> 1 год<br>
+                        <span class="description-field">Болезни:</span> нет<br>
+
+                        <span class="description-field">Статус:</span> ищет хозяина<br>
+                    </small>
+                </section>
+                <section class="full-description">
+                    <small>
+                        Хитрый, ленивый.
+                        Подозревает тебя всегда.
+                    </small>
+                </section>
+            </div>
+        </article>
+        <article class="cat-cell">
+            <div class="cat-preview">
+                <img src="./cats/cat-2.png" alt="Cat image">
+            </div>
+            <h4 class="cat-name">
+                <a href="#">Ленивец</a>
+            </h4>
+            <div class="cat-description">
+                <section class="simple-description">
+                    <small>
+                        <span class="description-field">Порода:</span> бирманская<br>
+                        <span class="description-field">Возраст:</span> 1 год<br>
+                        <span class="description-field">Болезни:</span> нет<br>
+
+                        <span class="description-field">Статус:</span> ищет хозяина<br>
+                    </small>
+                </section>
+                <section class="full-description">
+                    <small>
+                        Максимально ленивый. Идеально сойдет для кинца.
+                    </small>
+                </section>
+            </div>
+        </article>
+        <article class="cat-cell">
+            <div class="cat-preview">
+                <img src="./cats/cat-3.png" alt="Cat image">
+            </div>
+            <h4 class="cat-name">
+                <a href="#">Бродяга</a>
+            </h4>
+            <div class="cat-description">
+                <section class="simple-description">
+                    <small>
+                        <span class="description-field">Порода:</span> тагильская<br>
+                        <span class="description-field">Возраст:</span> 1 год<br>
+                        <span class="description-field">Болезни:</span> нет<br>
+
+                        <span class="description-field">Статус:</span> ищет хозяина<br>
+                    </small>
+                </section>
+                <section class="full-description">
+                    <small>
+                        Красавица, комсомолка и просто спортсменка.
+                        Подходит статным хозяевам.
+                        Накроет на стол.
+                    </small>
+                </section>
+            </div>
+        </article>
+        <article class="cat-cell">
+            <div class="cat-preview">
+                <img src="./cats/cat-4.png" alt="Cat image">
+            </div>
+            <h4 class="cat-name">
+                <a href="#">Умник</a>
+            </h4>
+            <div class="cat-description">
+                <section class="simple-description">
+                    <small>
+                        <span class="description-field">Порода:</span> бенгальская<br>
+                        <span class="description-field">Возраст:</span> 1 год<br>
+                        <span class="description-field">Болезни:</span> нет<br>
+
+                        <span class="description-field">Статус:</span> ищет хозяина<br>
+                    </small>
+                </section>
+                <section class="full-description">
+                    <small>
+                        Умеет оценивать твой код.
+                    </small>
+                </section>
+            </div>
+        </article>
+        <article class="cat-cell">
+            <div class="cat-preview">
+                <img src="./cats/cat-5.png" alt="Cat image">
+            </div>
+            <h4 class="cat-name">
+                <a href="#">Черный</a>
+            </h4>
+            <div class="cat-description">
+                <section class="simple-description">
+                    <small>
+                        <span class="description-field">Порода:</span> бомбейская кошка<br>
+                        <span class="description-field">Возраст:</span> 1 год<br>
+                        <span class="description-field">Болезни:</span> нет<br>
+
+                        <span class="description-field">Статус:</span> ищет хозяина<br>
+                    </small>
+                </section>
+                <section class="full-description">
+                    <small>
+                        Кот. Любит воровать твои вещи.
+                    </small>
+                </section>
+            </div>
+        </article>
+        <article class="cat-cell">
+            <div class="cat-preview">
+                <img src="./cats/cat-6.png" alt="Cat image">
+            </div>
+            <h4 class="cat-name">
+                <a href="#">Китик</a>
+            </h4>
+            <div class="cat-description">
+                <section class="simple-description">
+                    <small>
+                        <span class="description-field">Порода:</span> белый китик<br>
+                        <span class="description-field">Возраст:</span> 1 год<br>
+                        <span class="description-field">Болезни:</span> нет<br>
+
+                        <span class="description-field">Статус:</span> ищет хозяина<br>
+                    </small>
+                </section>
+                <section class="full-description">
+                    <small>
+                        Поддержит в трудную минуту.
+                        Можно взять в пару к Умнику.
+                    </small>
+                </section>
+            </div>
+        </article>
+        <article class="cat-cell">
+            <div class="cat-preview">
+                <img src="./cats/cat-7.png" alt="Cat image">
+            </div>
+            <h4 class="cat-name">
+                <a href="#">Макс</a>
+            </h4>
+            <div class="cat-description">
+                <section class="simple-description">
+                    <small>
+                        <span class="description-field">Порода:</span> британская шиншилла<br>
+                        <span class="description-field">Возраст:</span> 1 год<br>
+                        <span class="description-field">Болезни:</span> нет<br>
+
+                        <span class="description-field">Статус:</span> ищет хозяина<br>
+                    </small>
+                </section>
+                <section class="full-description">
+                    <small>
+                        Испуганный кот с испорченной психикой.
+                    </small>
+                </section>
+            </div>
+        </article>
+        <article class="cat-cell">
+            <div class="cat-preview">
+                <img src="./cats/cat-8.png" alt="Cat image">
+            </div>
+            <h4 class="cat-name">
+                <a href="#">Красавчик</a>
+            </h4>
+            <div class="cat-description">
+                <section class="simple-description">
+                    <small>
+                        <span class="description-field">Порода:</span> японский полосатый<br>
+                        <span class="description-field">Возраст:</span> 1 год<br>
+                        <span class="description-field">Болезни:</span> нет<br>
+
+                        <span class="description-field">Статус:</span> ищет хозяина<br>
+                    </small>
+                </section>
+                <section class="full-description">
+                    <small>
+                        Прекрасный кот. Обычно такие кошки крепкие и мускулистые кошки с шикарной
+                        шерстью.
+                    </small>
+                </section>
+            </div>
+        </article>
+        <article class="cat-cell">
+            <div class="cat-preview">
+                <img src="./cats/cat-9.jpg" alt="Cat image">
+            </div>
+            <h4 class="cat-name">
+                <a href="#">Джо</a>
+            </h4>
+            <div class="cat-description">
+                <section class="simple-description">
+                    <small>
+                        <span class="description-field">Порода:</span> европейская<br>
+                        <span class="description-field">Возраст:</span> 1 год<br>
+                        <span class="description-field">Болезни:</span> нет<br>
+
+                        <span class="description-field">Статус:</span> ищет хозяина<br>
+                    </small>
+                </section>
+                <section class="full-description">
+                    <small>
+                        Не любит игры. Возраст около 2х лет.
+                    </small>
+                </section>
+            </div>
+        </article>
+        <article class="cat-cell">
+            <div class="cat-preview">
+                <img src="./cats/cat-10.jpg" alt="Cat image">
+            </div>
+            <h4 class="cat-name">
+                <a href="#">Василий</a>
+            </h4>
+            <div class="cat-description">
+                <section class="simple-description">
+                    <small>
+                        <span class="description-field">Порода:</span> меинкун<br>
+                        <span class="description-field">Возраст:</span> 1 год<br>
+                        <span class="description-field">Болезни:</span> нет<br>
+
+                        <span class="description-field">Статус:</span> ищет хозяина<br>
+                    </small>
+                </section>
+                <section class="full-description">
+                    <small>
+                        Очень нравится девушкам.
+                    </small>
+                </section>
+            </div>
+        </article>
+    </main>
 </body>
+
 </html>
